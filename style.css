@@ -66,4 +66,22 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  nav, footer, .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

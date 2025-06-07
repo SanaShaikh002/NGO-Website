@@ -5,6 +5,24 @@
   box-sizing: border-box;
 }
 
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Soft gradient */
+  color: #333;
+}
+
+main {
+  background-color: white;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;

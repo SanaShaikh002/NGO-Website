@@ -1,80 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery - Navi Dish Swam Foundation</title>
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <table width="100%">
-    <tr>
-      <!-- Left: Logo -->
-      <td style="width: 80px;">
-        <img src="images/ngologo.jpg" alt="NGO Logo" width="80" height="80">
-      </td>
+  <div class="header-container">
+    <img src="images/ngologo.jpg" alt="NGO Logo" width="80" height="80">
+    <div class="header-content">
+      <h1 class="ngo-name">Navi Dish Swam Foundation</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="OurWork.html">Our Work</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>  
 
-      <!-- Right: NGO Name and Navigation -->
-      <td>
-         <h1>Navi Dish Swam Foundation</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-  <a href="OurWork.html">Our Work</a>
-      <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-      </td>
-    </tr>
-  </table>
-  </header>
+<main>
+  <div class="container">
+    <h2>Gallery</h2>
+    <p>Explore the moments that define our mission — the smiles, the efforts, and the hope.</p>
 
-  <main style="max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
-
-  <h2>Our Impact - Gallery</h2>
-
-  <p>
-    Welcome to the Navi Swam Dish Foundation Gallery. Here you can explore moments captured from our work in the community — showing the hope, joy, and progress our programs bring.
-  </p>
-  <p>
-    From education and health camps to food drives and women empowerment, these images tell the story of lives touched and changed.
-  </p>
-
-  <section>
-    <h3>Education for Children</h3>
-    <img src="images/educationimgngo.jpg" alt="Children learning in a class" width="300" style="margin-bottom: 10px;"><br>
-        <img src="images/educationimg2ngo.png" alt="Children learning in a class" width="300" style="margin-bottom: 10px;">
-    <p>Providing free education and learning resources in underserved communities.</p>
-  </section>
-
-  <section>
-    <h3>Health Camps</h3>
-    <img src="images/healthcampngo.jpg" alt="Medical camp in a village" width="300" style="margin-bottom: 10px;"><br>
-     <img src="images/healthcamp2ngo.jpeg" alt="Medical camp in a village" width="300" style="margin-bottom: 10px;"><br>
-    <p>Organizing free health check-ups and awareness camps to improve community health.</p>
-  </section>
-
-  <section>
-    <h3>Food Distribution</h3>
-    <img src="images/fooddistringo.jpeg" alt="Volunteers distributing food" width="300" style="margin-bottom: 10px;">
-    <p>Distributing nutritious meals to families affected by the pandemic and poverty.</p>
-  </section>
-
-  <section>
-    <h3>Women Empowerment</h3>
-    <img src="images/womenempowerngo.jpg" alt="Women in training program" width="300" style="margin-bottom: 10px;">
-    <p>Empowering women through skill development programs that promote self-reliance.</p>
-  </section>
-
+    <div class="gallery-grid">
+      <div>
+        <img src="images/educationimgngo.jpg" alt="Children learning">
+        <p class="caption">Literacy drive at a rural school</p>
+      </div>
+      <div>
+        <img src="images/educationimg2ngo.png" alt="Book distribution">
+        <p class="caption">Book kits given to over 300 kids</p>
+      </div>
+      <div>
+        <img src="images/healthcampngo.jpg" alt="Health camp setup">
+        <p class="caption">Mobile health camp in a tribal village</p>
+      </div>
+      <div>
+        <img src="images/healthcamp2ngo.jpeg" alt="Doctor examining patient">
+        <p class="caption">Free general check-ups for locals</p>
+      </div>
+      <div>
+        <img src="images/fooddistringo.jpeg" alt="Food distribution">
+        <p class="caption">Meal packs distributed during pandemic</p>
+      </div>
+      <div>
+        <img src="images/womenempowerngo.jpg" alt="Women in training">
+        <p class="caption">Vocational training session for women</p>
+      </div>
+    </div>
+  </div>
 </main>
 
+<footer>
+  <p>&copy; 2025 Navi Dish Swam Foundation NGO. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 Navi Dish Swam Foundation NGO. All rights reserved.</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

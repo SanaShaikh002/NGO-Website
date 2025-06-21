@@ -1,34 +1,35 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* style.css */
-
 body {
-  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #f3f4f6, #e5e7eb); /* Soft gradient */
+  background: #f7f9fc;
   color: #333;
+  line-height: 1.6;
 }
 
-main {
-  background-color: white;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+p {
+  margin-bottom: 10px;
 }
 
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header and Navigation */
 header {
   background-color: #2c3e50;
   color: white;
@@ -42,46 +43,190 @@ nav {
 
 nav a {
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Container */
 .container {
-  padding: 20px;
   max-width: 1000px;
   margin: auto;
-  background-color: white;
-  margin-top: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  background: white;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 10px;
 }
 
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1c5980;
+}
+
+/* Impact Section */
+.impact-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.counter-box {
+  margin: 15px;
+  text-align: center;
+}
+
+.counter {
+  font-size: 2rem;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* What We Do Cards */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.testimonial-slider {
+  background: #f1f1f1;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.testimonial-slider cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer */
 footer {
   background-color: #2c3e50;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1abc9c;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid, .counters {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+/* Header Fix */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.ngo-name {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
   margin-top: 20px;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-.container {
+.gallery-grid img {
   width: 100%;
-  padding: 10px;
+  height: 200px;         /* Fixed height for all images */
+  object-fit: cover;     /* Makes image fill the space without distortion */
+  border-radius: 6px;    /* Optional: rounded corners */
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  nav, footer, .main-content {
-    flex-direction: column;
-    text-align: center;
-  }
+.caption {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #555;
+  margin-top: 8px;
 }
